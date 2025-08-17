@@ -1,0 +1,38 @@
+.app-main {
+  padding: 2rem;
+}
+.summary-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container h2 {
+  color: #333;
+}
+
+.summary-container p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.key-points {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.key-points div {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.key-points h3 {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}

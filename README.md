@@ -18,6 +18,7 @@ Angular CLI includes powerful code scaffolding tools. To generate a new componen
 
 ```bash
 ng generate component component-name
+ng g c component-name
 ```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
@@ -57,3 +58,48 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Why This Structure Works for Angular 19
+
+### 1. Monorepo-Friendly Workspace
+
+Angular CLI's default `ng new` setup creates a workspace that supports multiple projects or libraries. Configuration files like `angular.json`, `tsconfig.json`, `package.json`, and `README.md` reside at the root, establishing a unified configuration environment.
+
+### 2. LIFT-Based App Structure
+
+The primary concept involves organizing the `src/app/` directory into three main categories:
+
+- **core/**: Contains application-wide singletons such as authentication logic, layout scaffolding, and global guards/interceptors.
+- **shared/**: Houses reusable components, pipes, directives, and services that are not feature-specific. Subfolder conventions can group items by domain, UI, or service.
+- **features/** (or **routes/**): Contains self-contained feature modules (e.g., `auth`, `dashboard`, `products`, `bookings`). Each feature folder includes its own components, services, routing, and models.
+
+This architecture enhances modularity, ease of navigation, and maintainability.
+
+```
+src/
+└── app/
+    ├── core/
+    │   ├── auth/
+    │   │   ├── auth.service.ts
+    │   │   └── auth.guard.ts
+    │   └── layout/
+    │       ├── header.component.ts
+    │       └── footer.component.ts
+    ├── shared/
+    │   ├── ui/
+    │   │   ├── button.component.ts
+    │   │   └── modal.component.ts
+    │   ├── services/
+    │   │   └── logger.service.ts
+    │   └── domain/
+    │       └── user.model.ts
+    └── features/
+        ├── auth/
+        │   ├── login/
+        │   └── register/
+        ├── bookings/
+        │   ├── booking-list/
+        │   └── booking-detail/
+        └── home/
+            └── home.component.ts
+```
