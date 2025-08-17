@@ -1,0 +1,18 @@
+:host {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #3a4ca8 60%, #6c8cff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 80, 180, 0.08);
+}
+
+:host:disabled {
+  background: #bfc8e6;
+  cursor: not-allowed;
+}

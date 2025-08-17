@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* Make Global style Dracula black */
+:root {
+  --bg-color: #282a36;
+  --fg-color: #f8f8f2;
+  --border-color: #44475a;
+  --accent-color: #bd93f9;
+  --selection-color: #44475a;
+}
+
+body,
+html {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}

@@ -1,108 +1,78 @@
-.login-container {
+.register-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #f0f4ff 0%, #e0e7ff 100%);
+  background: var(--bg-color);
 }
 
-.login-card {
-  background: #fff;
+.register-form {
+  background: var(--bg-color);
   padding: 2.5rem 2rem;
   border-radius: 1.2rem;
-  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  box-shadow: 0 8px 32px rgba(239, 240, 244, 0.12);
   width: 100%;
   max-width: 370px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-h2 {
-  margin-bottom: 0.5rem;
-  color: #3358e0;
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2d14e9;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  color: #7b8ca7;
-  margin-bottom: 1.5rem;
+  color: #bbb8d8;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
+  text-align: center;
 }
 
 .form-group {
-  text-align: left;
-  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 0.4rem;
-  color: #34495e;
+  font-size: 1rem;
+  color: #e3e4ec;
   font-weight: 500;
 }
 
 .form-group input {
-  width: 100%;
-  padding: 0.7rem 0.7rem;
-  border: 1px solid #dbeafe;
+  padding: 0.7rem 1rem;
+  border: 1px solid #bfc8e6;
   border-radius: 0.5rem;
   font-size: 1rem;
-  outline: none;
   transition: border 0.2s;
+  outline: none;
+  background: #f7f9ff;
 }
 
 .form-group input:focus {
-  border-color: #4f8cff;
+  border-color: #3a4ca8;
+  background: #eef2ff;
 }
 
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.forgot-link {
-  color: #4f8cff;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.forgot-link:hover {
-  color: #3358e0;
-  text-decoration: underline;
-}
-
-.login-btn {
-  width: 100%;
-  padding: 0.8rem 0;
-  background: linear-gradient(90deg, #4f8cff 0%, #3358e0 100%);
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-  margin-bottom: 1rem;
-}
-
-.login-btn:hover {
-  background: linear-gradient(90deg, #3358e0 0%, #4f8cff 100%);
-}
-
-.signup-link {
-  color: #7b8ca7;
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
   font-size: 0.97rem;
 }
 
-.signup-link a {
-  color: #3358e0;
+.login-link a {
+  color: #3a4ca8;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 0.2rem;
+  transition: color 0.2s;
 }
 
-.signup-link a:hover {
-  text-decoration: underline;
+.login-link a:hover {
+  color: #6c8cff;
 }
