@@ -1,0 +1,10 @@
+.app-nav {
+  background: #eee;
+  padding: 0.5rem 2rem;
+}
+
+.app-nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #1976d2;
+}
