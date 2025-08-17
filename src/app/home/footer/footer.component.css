@@ -1,0 +1,44 @@
+/* ...existing code... */
+:host {
+  display: block;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.app-footer {
+  background: #23272b;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer-main {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.footer-sub {
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
+.footer-highlight {
+  color: #4fc3f7;
+}
+
+.footer-logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-heart {
+  color: #e57373;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
