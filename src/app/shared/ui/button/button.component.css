@@ -8,10 +8,10 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
   transition: background 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(60, 80, 180, 0.08);
 }
-
 :host:disabled {
   background: #bfc8e6;
   cursor: not-allowed;
